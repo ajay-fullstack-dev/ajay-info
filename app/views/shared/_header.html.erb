@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="#home" class="logo">
+      <span class="logo__primary">AJAY</span><span class="logo__accent">FULLSTACK</span>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+
+    <nav class="site-nav">
+      <%= nav_link "Home", "home", active: true %>
+      <%= nav_link "About", "about" %>
+      <%= nav_link "Skills", "skills" %>
+      <%= nav_link "Projects", "projects" %>
+      <%= nav_link "Experience", "experience" %>
+      <%= nav_link "Blog", "blog" %>
+    </nav>
+
+    <a href="#contact" class="btn btn--primary btn--sm site-header__cta">
+      <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+      </svg>
+      Contact Me
+    </a>
+
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</header>

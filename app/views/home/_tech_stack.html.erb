@@ -1,0 +1,28 @@
+<section class="section tech-stack" id="skills">
+  <div class="container">
+    <h2 class="section__title">Tech Stack</h2>
+
+    <div class="tech-stack__grid">
+      <% [
+        ["devicon-ruby-plain colored", "Ruby"],
+        ["devicon-rails-plain colored", "Rails"],
+        ["devicon-javascript-plain colored", "JavaScript"],
+        ["devicon-react-original colored", "React"],
+        ["devicon-postgresql-plain colored", "PostgreSQL"],
+        ["devicon-redis-plain colored", "Redis"],
+        ["devicon-amazonwebservices-plain-wordmark colored", "AWS"],
+        ["devicon-docker-plain colored", "Docker"],
+        ["devicon-git-plain colored", "Git"]
+      ].each do |icon_class, name| %>
+        <div class="tech-stack__item">
+          <i class="<%= icon_class %> tech-stack__icon"></i>
+          <span class="tech-stack__name"><%= name %></span>
+        </div>
+      <% end %>
+      <div class="tech-stack__item">
+        <%= image_tag "tech/sidekiq.svg", alt: "Sidekiq", class: "tech-stack__icon tech-stack__icon--img" %>
+        <span class="tech-stack__name">Sidekiq</span>
+      </div>
+    </div>
+  </div>
+</section>
